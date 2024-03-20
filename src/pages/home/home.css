@@ -1,0 +1,243 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f4fafd, #9696ff);
+}
+
+.home_container  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.city_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.city_input input {
+    outline: none;
+    border: none;
+    padding: 0.75rem 1rem;
+    width: 42%;
+    border-radius: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.city_input .icon {
+    margin-left: -2rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--icon-color);
+    cursor: pointer;
+}
+
+.weather_info-container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.weather_climate {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.weather_climate img {
+    width: 300px;
+}
+
+.weather_data {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    padding-left: 4rem;
+}
+
+.weather_data h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.weather_data h5 {
+    font-size: 1rem;
+    font-weight: 500    ;
+    letter-spacing: 1.5px;
+}
+
+.weather_data .date {
+    padding: 1rem 0 0;
+    border-top: 3px solid lightgrey;
+    width: max-content;
+}
+
+.weather_data .date p {
+    line-height: 1.5rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.weather_data h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.weather_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 2rem;
+}
+
+.weather_info-box {
+    background-color: var(--container-color);
+    padding: 1rem 1.5rem;
+    width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1em;
+}
+
+.weather_info-box h6 {
+    font-size: 0.75rem;
+    color: var(--text-color);
+}
+
+.weather_info-box h2 {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+#cityNotFound {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: red;
+}
+
+
+@media only screen and (max-width: 992px){
+    .city_input input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .weather_climate img {
+        width: 200px;
+    } 
+    
+    .weather_data {
+        gap: 0.75rem;
+        padding-left: 3rem;
+    }
+
+    .weather_data h1 {
+        font-size: 3rem;
+    }
+    
+    .weather_data h5 {
+        font-size: 1rem;
+        font-weight: 500    ;
+        letter-spacing: 1.2px;
+    }
+    
+    .weather_data .date {
+        padding: 0.75rem 0 0;
+    }
+    
+    .weather_data h2 {
+        font-size: 1.15rem;
+        font-weight: 600;
+    }
+
+    .weather_info-box {
+        padding: 0.75rem 1.25rem;
+        width: 160px;
+        gap: 0.9rem;
+        border-radius: 0.9em;
+    }
+    
+    .weather_info-box h2 {
+        font-size: 1.25rem;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .city_input input {
+        padding: 0.6rem 0.75rem;
+        width: 56%;
+        border-radius: 0.75rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .city_input .icon {
+        font-size: 1rem;
+    }
+
+    .weather_info {
+        gap: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .home {
+        height: auto;
+        padding: 2rem 0;
+    }
+    .weather_info-container {
+        grid-template-columns: 1fr;
+    }
+
+    .weather_climate{
+        justify-content: center;
+    }
+
+    .weather_data {
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .weather_info {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .weather_info-box {
+        padding: 0.75rem 1.25rem;
+        width: 300px;
+        gap: 1rem;
+        border-radius: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .city_input input {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .weather_info {
+        width: 100%;
+    }
+
+    .weather_info-box {
+        padding: 0.75rem 1.25rem;
+        width: 90%;
+    }
+}

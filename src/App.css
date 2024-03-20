@@ -1,0 +1,60 @@
+:root {
+  --body-color: rgb(238, 243, 255);
+  --text-color: rgb(26, 26, 26);
+  --text-color-dark: black;
+  --container-color: #ffff;
+  --icon-color: rgb(102, 102, 102);
+}
+
+body {
+    background-color: var(--body-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 4rem 0;
+}
+
+.grid {
+    display: grid;
+}
+
+@media only screen and (max-width: 1200px){
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media only screen and (max-width: 1100px){
+    .container {
+        max-width: 900px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .container {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        margin: 3rem 0;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .section {
+        margin: 0;
+    }
+}

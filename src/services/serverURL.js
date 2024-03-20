@@ -1,0 +1,1 @@
+export const serverURL = "https://weather-server-njo2.onrender.com"
